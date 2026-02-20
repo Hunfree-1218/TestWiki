@@ -1496,18 +1496,54 @@
         
       </main>
       
+<style>
+    /* 하단 바 전체 높이 및 내부 여백 초슬림 최적화 */
+    .md-footer-meta {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        background-color: #131416;
+    }
+    .md-footer-meta__inner {
+        margin: 0 !important;
+        padding-top: 4px !important;    /* 위쪽 최소 여백 */
+        padding-bottom: 4px !important; /* 아래쪽 최소 여백 */
+        min-height: 0 !important;       /* 기본 높이 해제 */
+    }
+
+    /* 조회수 텍스트 스타일: 크기 두 단계 축소 및 굵기 유지 */
+    .custom-stats-row {
+        margin-bottom: 2px;
+        color: #a0a0a0;
+        font-size: 0.65rem; /* 사이즈 두 단계 축소 */
+        display: flex;
+        gap: 12px;
+        line-height: 1.1;
+    }
+    .custom-stats-row strong {
+        color: #fff; /* 숫자 굵기 및 색상 강조 */
+        font-weight: 700;
+    }
+
+    /* 저작권 문구 스타일 */
+    .custom-copyright-row {
+        font-size: 0.65rem;
+        color: #6e6e6e;
+        line-height: 1.1;
+    }
+</style>
+
 <footer class="md-footer">
     <div class="md-footer-meta md-typeset">
         <div class="md-footer-meta__inner md-grid">
             <div class="md-copyright" style="text-align: left; display: flex; flex-direction: column; align-items: flex-start;">
 
-                <div style="margin-bottom: 4px; color: #a0a0a0; font-size: 0.85em; display: flex; gap: 15px;">
-                    <span>📊 전체 조회수: <strong id="global-total-views" style="color: #fff;">0</strong></span>
-                    <span>📅 오늘 조회수: <strong id="global-daily-views" style="color: #fff;">0</strong></span>
+                <div class="custom-stats-row">
+                    <span>📊 전체 조회수: <strong id="global-total-views">0</strong></span>
+                    <span>📅 오늘 조회수: <strong id="global-daily-views">0</strong></span>
                 </div>
 
-                <div class="md-copyright__highlight" style="margin: 0; font-size: 0.8em; color: #6e6e6e;">
-                    © 2026 path of titans
+                <div class="custom-copyright-row">
+                    &copy; 2026 Path of Titans
                 </div>
             </div>
         </div>
