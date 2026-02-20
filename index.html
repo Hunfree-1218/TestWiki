@@ -747,46 +747,46 @@
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       ﻿<style>
-    /* 1. 하단 바 전체 높이를 결정하는 외부/내부 여백 및 최소 높이 제거 */
+    /* 1. 하단 바 배경 및 높이 설정 (두 줄이 넉넉히 들어가도록 조정) */
     .md-footer-meta {
+        background-color: #131416; /* 바 배경색 유지 */
         padding-top: 0 !important;
         padding-bottom: 0 !important;
-        background-color: #131416; /* 바 배경색 유지 */
     }
     .md-footer-meta__inner {
         margin: 0 !important;
-        padding-top: 4px !important;    /* 위쪽 미세 여백 */
-        padding-bottom: 4px !important; /* 아래쪽 미세 여백 */
-        min-height: 0 !important;       /* 테마 기본 최소 높이 해제 */
+        padding-top: 8px !important;    /* 위쪽 여백 확보 */
+        padding-bottom: 8px !important; /* 아래쪽 여백 확보 */
+        min-height: 0 !important;
     }
 
-    /* 2. 텍스트 컨테이너: 왼쪽 여백 추가 (벽에 붙지 않게 조정) */
+    /* 2. 텍스트 컨테이너: 왼쪽 여백 및 수직 정렬 */
     .md-copyright {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column;         /* 위아래 두 줄로 배치 */
         align-items: flex-start;
         text-align: left;
-        padding-left: 20px !important; /* 요청하신 왼쪽 여백 */
+        padding-left: 20px !important;  /* 요청하신 왼쪽 여백 유지 */
     }
 
-    /* 3. 조회수 텍스트 스타일 (원본 0.65rem 유지) */
+    /* 3. 조회수 텍스트 스타일 (0.65rem) */
     .custom-stats {
-        font-size: 0.65rem;
+        font-size: 0.65rem;             /* 원본 사이즈 유지 */
         font-weight: 500;
         color: var(--md-default-fg-color--light);
         display: flex;
-        gap: 8px;
-        line-height: 1.2;
-        margin-bottom: 1px;
+        gap: 12px;
+        line-height: 1.4;               /* 가독성을 위한 줄 간격 */
+        margin-bottom: 4px;             /* 저작권 문구와의 간격 */
     }
 
-    /* 4. 저작권 문구 스타일 (원본 0.65rem 유지) */
+    /* 4. 저작권 문구 스타일 (0.65rem) */
     .custom-copyright {
-        font-size: 0.65rem;
+        font-size: 0.65rem;             /* 원본 사이즈 유지 */
         color: var(--md-default-fg-color--light);
         opacity: 0.7;
-        line-height: 1.2;
+        line-height: 1.4;
     }
 </style>
 
