@@ -810,25 +810,39 @@
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       ﻿<style>
-    /* 하단 검은색 배경 바 자체의 뚱뚱한 위아래 여백을 대폭 줄여주는 코드 */
+    /* 하단 바 두께 및 텍스트 사이즈 최소화 */
     .md-footer-meta {
-        padding-top: 0.5rem !important;
-        padding-bottom: 0.5rem !important;
+        padding-top: 0.3rem !important;
+        padding-bottom: 0.3rem !important;
+    }
+    .custom-stats {
+        font-size: 0.75rem; /* 글씨 크기 대폭 축소 */
+        font-weight: 500;
+        color: var(--md-default-fg-color--light);
+        display: flex;
+        gap: 10px;
+        margin-bottom: 2px;
+    }
+    .custom-copyright {
+        font-size: 0.7rem;
+        color: var(--md-default-fg-color--light);
+        opacity: 0.8;
     }
 </style>
 
-<div class="md-copyright" style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; text-align: left; margin-left: 0; margin-right: auto; line-height: 1.3;">
+<div class="md-copyright" style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; text-align: left;">
 
-    <div style="margin-bottom: 4px; font-weight: 600; font-size: 0.85rem; color: var(--md-default-fg-color--light); display: flex; gap: 12px;">
-        <span>📊 전체 조회수: <span id="total-views">0</span></span>
-        <span>📅 오늘 조회수: <span id="today-views">0</span></span>
+    <div class="custom-stats">
+        <span>📊 전체 조회수: <span id="busuanzi_value_site_pv">--</span></span>
+        <span>📅 오늘 조회수: <span id="busuanzi_value_site_uv">--</span></span>
     </div>
 
-    <div class="md-copyright__highlight" style="color: var(--md-default-fg-color--light); font-size: 0.8rem;">
+    <div class="custom-copyright">
         &copy; 2026 Path of Titans
     </div>
-
 </div>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
       
     </div>
   </div>
