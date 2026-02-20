@@ -1,18 +1,25 @@
-# Welcome to MkDocs
+# 🦖 패스 오브 타이탄 (Path of Titans)
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+**패스 오브 타이탄(Path of Titans)**은 Alderon Games에서 개발한 크로스플랫폼 공룡 생존 MMO 게임입니다. 플레이어는 갓 태어난 새끼 생물로 시작해, 험난한 자연환경과 다른 플레이어들의 위협 속에서 퀘스트를 클리어하며 거대한 성체로 성장해 나가는 생존의 과정을 겪게 됩니다.
 
-## Commands
+## 🌟 핵심 시스템
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* **크로스플랫폼 지원:** PC, 모바일, 콘솔 등 다양한 기기에서 하나의 서버로 만나 생태계를 이룹니다.
+* **성장과 퀘스트 (Growth & Marks):** 단순히 시간이 지나면 크는 것이 아니라, 맵 곳곳에서 자연물 수집, 지역 탐험 등의 퀘스트를 수행하여 성장치와 재화를 얻어야 합니다.
+* **다채로운 전투와 능력치:**
+  * **종(Sub-species):** 같은 공룡이라도 아종에 따라 방어력, 속도, 스태미나 등의 세부 스탯이 달라집니다.
+  * **스킬 슬롯:** 머리, 감각, 앞다리, 꼬리 등 신체 부위별로 원하는 스킬을 장착해 나만의 플레이 스타일을 구축할 수 있습니다. (예: 스태미나 독 vs 생물 독 선택)
 
-## Project layout
+## 🦕 공룡 생태계
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-ㄹㅇㄴㅀㅁㅇㄶㅇㅀㄹㅇ
+플레이어는 크게 **육식(Carnivore)**과 **초식(Herbivore)** 중 하나를 선택하며, 각 생물의 서식지(육상, 반수생, 수생, 비행)에 따라 활동 반경이 크게 달라집니다.
+
+### 🍖 육식 공룡 (Carnivores)
+날카로운 턱과 발톱, 출혈이나 맹독 같은 치명적인 상태 이상을 활용해 사냥을 펼치는 포식자들입니다.
+* **주요 특징:** 낮고 납작한 체구를 이용해 상대의 공격을 흘리거나, 은신과 매복을 통한 기동성 위주의 전투 양상이 자주 나옵니다.
+* **대표 생물:** 메갈라니아(Megalania), 알로사우루스(Allosaurus), 스피노사우루스(Spinosaurus) 등
+
+### 🌿 초식 공룡 (Herbivores)
+질긴 생명력과 강력한 꼬리 치기, 뿔 박기 등으로 무장하여 육식 공룡의 뼈를 부러뜨리거나 치명타를 입히는 든든한 생존자들입니다.
+* **주요 특징:** 무리를 지었을 때의 시너지가 뛰어나며, 개별 전투력과 방어력 또한 웬만한 육식 공룡을 상회하는 경우가 많습니다.
+* **대표 생물:** 미라가이아(Miragaia), 에오트리케라톱스(Eotriceratops), 스테고사우루스(Stegosaurus) 등

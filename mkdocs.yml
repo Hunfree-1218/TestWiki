@@ -1,1 +1,34 @@
-site_name: My Docs
+site_name: Path of Titans
+site_url: https://Hunfree-1218.github.io/TestWiki/
+
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    # 라이트 모드 설정
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 변경
+    # 다크 모드 설정
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 변경
+
+nav:
+  - 홈: index.md
+  - 맵: map.md
+  - 공룡:
+      - 육식:
+          - 육상: pot/carni_land.md
+          - 수상: pot/carni_water.md
+      - 초식:
+          - 육상: pot/herb_land.md
+  - 패치노트:
+      - 2025년 업데이트: patch/2025update.md
+      - 2026년 업데이트: patch/2026update.md
