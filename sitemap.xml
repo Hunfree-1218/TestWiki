@@ -1,3 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://Hunfree-1218.github.io/TestWiki/</loc>
+         <lastmod>2026-02-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Hunfree-1218.github.io/TestWiki/patch/2025update/</loc>
+         <lastmod>2026-02-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Hunfree-1218.github.io/TestWiki/patch/2026update/</loc>
+         <lastmod>2026-02-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Hunfree-1218.github.io/TestWiki/pot/carni_land/</loc>
+         <lastmod>2026-02-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Hunfree-1218.github.io/TestWiki/pot/carni_water/</loc>
+         <lastmod>2026-02-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Hunfree-1218.github.io/TestWiki/pot/herb_land/</loc>
+         <lastmod>2026-02-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
