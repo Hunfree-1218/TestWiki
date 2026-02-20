@@ -810,32 +810,36 @@
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       ﻿<style>
-    /* 하단 바 전체 영역의 여백을 0에 가깝게 강제 고정 */
+    /* 1. 하단 바 전체 높이를 결정하는 외부/내부 여백 및 최소 높이 제거 */
     .md-footer-meta {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
+        background-color: #131416; /* 바 배경색 유지 */
     }
     .md-footer-meta__inner {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-        padding-top: 4px !important;    /* 아주 미세한 여백만 남김 */
-        padding-bottom: 4px !important;
+        margin: 0 !important;
+        padding-top: 2px !important;    /* 위쪽 미세 여백 */
+        padding-bottom: 4px !important; /* 아래쪽 미세 여백 */
+        min-height: 0 !important;       /* 테마 기본 최소 높이 해제 */
     }
 
+    /* 2. 조회수 텍스트: 현재보다 두 단계 더 축소 (0.65rem) */
     .custom-stats {
-        font-size: 0.7rem; /* 글씨를 조금 더 작게 조정 */
+        font-size: 0.65rem;
         font-weight: 500;
         color: var(--md-default-fg-color--light);
         display: flex;
-        gap: 10px;
-        line-height: 1.1; /* 줄 간격을 좁혀 높이 감소 */
+        gap: 8px;
+        line-height: 1; /* 줄 간격 최소화 */
         margin-bottom: 1px;
     }
+
+    /* 3. 저작권 문구: 기존 크기 유지하며 정렬 */
     .custom-copyright {
         font-size: 0.65rem;
         color: var(--md-default-fg-color--light);
         opacity: 0.7;
-        line-height: 1.1;
+        line-height: 1;
     }
 </style>
 
@@ -844,6 +848,7 @@
         <span>📊 전체 조회수: <span id="busuanzi_value_site_pv">--</span></span>
         <span>📅 오늘 조회수: <span id="busuanzi_value_site_uv">--</span></span>
     </div>
+
     <div class="custom-copyright">
         &copy; 2026 Path of Titans
     </div>
