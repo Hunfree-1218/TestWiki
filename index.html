@@ -747,33 +747,40 @@
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       ﻿<style>
-    /* 하단 바 두께 및 텍스트 사이즈 최소화 */
+    /* 하단 바 전체 영역의 여백을 0에 가깝게 강제 고정 */
     .md-footer-meta {
-        padding-top: 0.2rem !important;
-        padding-bottom: 0.3rem !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
     }
+    .md-footer-meta__inner {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding-top: 4px !important;    /* 아주 미세한 여백만 남김 */
+        padding-bottom: 4px !important;
+    }
+
     .custom-stats {
-        font-size: 0.75rem; /* 글씨 크기 대폭 축소 */
+        font-size: 0.7rem; /* 글씨를 조금 더 작게 조정 */
         font-weight: 500;
         color: var(--md-default-fg-color--light);
         display: flex;
         gap: 10px;
-        margin-bottom: 2px;
+        line-height: 1.1; /* 줄 간격을 좁혀 높이 감소 */
+        margin-bottom: 1px;
     }
     .custom-copyright {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         color: var(--md-default-fg-color--light);
-        opacity: 0.8;
+        opacity: 0.7;
+        line-height: 1.1;
     }
 </style>
 
 <div class="md-copyright" style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; text-align: left;">
-
     <div class="custom-stats">
         <span>📊 전체 조회수: <span id="busuanzi_value_site_pv">--</span></span>
         <span>📅 오늘 조회수: <span id="busuanzi_value_site_uv">--</span></span>
     </div>
-
     <div class="custom-copyright">
         &copy; 2026 Path of Titans
     </div>
